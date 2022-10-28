@@ -36,12 +36,24 @@ public class FuncionTest {
         //fail("The test case is a prototype.");
     }
     
-        @Test
+    @Test
     public void testObtenerAccion2() {
         System.out.println("ObtenerAccion2");
         Funcion instance = new Funcion();
         String expResult = "Matricular";
         String result = instance.ObtenerAccion("no",true);
+        System.out.println(result);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void testObtenerAccion3() {
+        System.out.println("ObtenerAccion3");
+        Funcion instance = new Funcion();
+        String expResult = "actualizar";
+        String result = instance.ObtenerAccion("porConfirmar",true);
         System.out.println(result);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
