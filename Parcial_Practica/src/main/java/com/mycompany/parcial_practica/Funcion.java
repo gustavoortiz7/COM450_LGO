@@ -28,6 +28,9 @@ public class Funcion {
         if(a.equals(tipoPersonaDestino) && esExterno==true){
             return "registrar";
         }
+        if(a.equals("vigente") && esExterno==true){
+            return "matricular";
+        }
 
 
         return "vacio";
