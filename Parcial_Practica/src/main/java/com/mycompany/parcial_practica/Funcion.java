@@ -12,7 +12,7 @@ public class Funcion {
     String esObligatorio="si";
     boolean esDocente=true;
     boolean esExterno=true;
-    String tipoPersonaDestino="docente";
+    String tipoPersonaDestino="esterno";
     String estadoRegistro="porConfirmar";
     
     public String ObtenerAccion(String a, boolean b){
@@ -24,6 +24,9 @@ public class Funcion {
         }
         if(a.equals(estadoRegistro) && esExterno==true){
             return "actualizar";
+        }
+        if(a.equals(tipoPersonaDestino) && esExterno==true){
+            return "registrar";
         }
 
 
