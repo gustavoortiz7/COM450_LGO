@@ -19,8 +19,11 @@ public class Funcion {
         if(a.equals(esObligatorio) && esDocente==true){
             return "Actualizar";
         }
-        else if((!a.equals(esObligatorio)) && esDocente==true){
+        if((a.equals("no")) && esDocente==true){
             return "Matricular";
+        }
+        if(a.equals(estadoRegistro) && esExterno==true){
+            return "actualizar";
         }
 
 
