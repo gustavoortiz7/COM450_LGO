@@ -60,4 +60,15 @@ public class FuncionTest {
         //fail("The test case is a prototype.");
     }
     
+    @Test
+    public void testObtenerAccion4() {
+        System.out.println("ObtenerAccion3");
+        Funcion instance = new Funcion();
+        String expResult = "registrar";
+        String result = instance.ObtenerAccion("esterno",true);
+        System.out.println(result);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
 }
